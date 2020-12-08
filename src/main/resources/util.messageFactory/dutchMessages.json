@@ -1,0 +1,21 @@
+{
+  "LOGIN_FAILED": "Login is gefaald: het email of wachtwoord is incorrect.",
+  "LOGIN_SUCCESS": "Login is succesvol",
+  "ACCOUNT_CREATED" : "Account is aangemaakt",
+  "REGISTER_FAILED" : "Account kan niet worden aangemaakt",
+  "INVALID_PASSWORD" : "Het ingevoerde wachtwoord is incorrect",
+  "FILES_UPLOADED" : "De ingevoerde bestanden zijn succesvol geupload.",
+  "FILE_TYPE_NOT_ALLOWED" : "Bestandstype is niet toegestaan <br>Wij ondersteunen de volgende bestandstypen (weergegeven door diens extentie): .pdf, .jpg, .jpeg en .png",
+  "FILE_CANNOT_BE_SAVED" : "De ingevoerde bestand(en) kunnen niet opgeslagen worden",
+  "FILE_NOT_FOUND" : "De gevraagde bestand(en) kunnen niet worden gevonden",
+  "FILES_GOTTEN" : "De gevraagde bestand(en) zijn opgehaald.",
+  "ALL_USERS_RETRIEVED" : "Alle gebruikers zijn succesvol opgehaald",
+  "USER_FROM_ID_RETRIEVED" : "De gebruiker met het gegeven id is succesvol opgehaald",
+  "USER_PRIVILEGE_CHANGED" : "Het privilege van deze gebruiker is nu aangepast",
+  "USER_PRIVILEGE_RETRIEVED" : "Het privilege van de gegeven gebruiker is succesvol opgehaald",
+  "USER_NOT_PRIVILEGED" : "U heeft niet het juiste privilege om deze actie uit te voeren",
+  "USER_LANGUAGE_CHANGED" : "De taal is veranderd",
+  "USER_PASSWORD_CHANGED": "Het wachtwoord is succesvol gewijzigd",
+  "PASSWORD_NOT_NEW": "Het gegeven wachtwoord is het zelfde als het vorige wachtwoord.",
+  "ALL_PROFILES_GOTTEN" : "De gevraagde competentie profielen zijn opgehaald"
+}
