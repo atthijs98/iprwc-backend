@@ -12,19 +12,17 @@ public class User implements Principal {
     private String authToken;
     private Language language;
 
-    public User(int id, String uuid, String email, String name, int privilege, Language language){}
+    public User(){}
 
-    public User(int id, String UUID, String email, String name, int privilege, String authToken, Language language) {
+    public User(int id, String UUID, String email, String name, int privilege, Language language) {
         this.id = id;
         this.UUID = UUID;
         this.email = email;
         this.name = name;
         this.privilege = privilege;
-        this.authToken = authToken;
         this.language = language;
     }
 
-    @Override
     public String getName() {
         return name;
     }

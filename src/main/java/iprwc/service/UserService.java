@@ -77,6 +77,7 @@ public class UserService {
             try {
                 UUID uuid = UUID.nameUUIDFromBytes(email.getBytes(StandardCharsets.UTF_8));
                 int id = userDAO.registerUser(uuid.toString(), email, name, password);
+                System.out.println("wallah abi");
                 return userDAO.getUserFromId(id);
 
             } catch (UnableToExecuteStatementException e) {
@@ -98,7 +99,7 @@ public class UserService {
 
     /**
      * @return
-     * @author kevin
+     * @author Matthijs
      */
     public List<User> getUsers() {
         return userDAO.getUsers();
@@ -126,7 +127,7 @@ public class UserService {
      *
      * @param id
      * @return
-     * @author kevin
+     * @author Matthijs
      */
     public int getPrivilegeOfUser(int id) {
         return userDAO.getPrivilegeById(id);
@@ -137,14 +138,14 @@ public class UserService {
      * @param id
      * @param privilege
      * @return
-     * @author kevin
+     * @author Matthijs
      */
     public int changeUserPrivilege(int id, int privilege) {
         return userDAO.changeUserPrivilege(id, privilege);
     }
 
-    public User alterLanguage(int id, Language newLanguage) {
-        userDAO.alterLanguage(id, newLanguage.toString());
+    public User alterLanguage(int id, String newLanguage) {
+        userDAO.alterLanguage(id, newLanguage);
         return userDAO.getUserFromId(id);
     }
 

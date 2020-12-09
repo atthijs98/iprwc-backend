@@ -24,6 +24,7 @@ public interface UserDAO {
             "name VARCHAR(256) NOT NULL, " +
             "password VARCHAR(64) NOT NULL, " +
             "privilege INT DEFAULT 0, " +
+            "language VARCHAR(256) DEFAULT english, " +
             "PRIMARY KEY (id) " +
             ");")
     void createTable();
