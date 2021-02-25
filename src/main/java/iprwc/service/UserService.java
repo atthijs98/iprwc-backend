@@ -77,7 +77,6 @@ public class UserService {
             try {
                 UUID uuid = UUID.nameUUIDFromBytes(email.getBytes(StandardCharsets.UTF_8));
                 int id = userDAO.registerUser(uuid.toString(), email, name, password);
-                System.out.println("wallah abi");
                 return userDAO.getUserFromId(id);
 
             } catch (UnableToExecuteStatementException e) {
@@ -187,5 +186,9 @@ public class UserService {
             String password = BCrypt.withDefaults().hashToString(12, frontendPassword.toCharArray());
             return userDAO.setNewPassword(password, id);
         }
+    }
+
+    public void deleteUser(User authUser, int id) {
+        userDAO.deleteUser(id);
     }
 }

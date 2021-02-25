@@ -66,7 +66,6 @@ public class User implements Principal {
     public void setId(int id) {
         this.id = id;
     }
-
     public void setLanguage(Language language) {
         this.language = language;
     }
@@ -79,3 +78,4 @@ public class User implements Principal {
         this.UUID = UUID;
     }
 }
+

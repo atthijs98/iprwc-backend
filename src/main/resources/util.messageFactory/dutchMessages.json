@@ -17,5 +17,12 @@
   "USER_LANGUAGE_CHANGED" : "De taal is veranderd",
   "USER_PASSWORD_CHANGED": "Het wachtwoord is succesvol gewijzigd",
   "PASSWORD_NOT_NEW": "Het gegeven wachtwoord is het zelfde als het vorige wachtwoord.",
-  "ALL_PROFILES_GOTTEN" : "De gevraagde competentie profielen zijn opgehaald"
+  "ALL_PROFILES_GOTTEN" : "De gevraagde competentie profielen zijn opgehaald",
+  "USER_DELETED": "De gebruiker is succesvol verwijderd",
+  "ALL_PRODUCTS_RETRIEVED": "Alle producten zijn succesvol opgehaald",
+  "ALL_PRODUCTS_RETRIEVED_FAILED": "Het ophalen van alle producten is gefaald",
+  "PRODUCT_RETRIEVED": "Succesvol product opgehaald via id",
+  "PRODUCT_DELETED": "Product succesvol verwijderd",
+  "PRODUCT_ADDED": "Product succesvol toegevoegd",
+  "DUPLICATE_PRODUCT": "Dit product bestaat al"
 }

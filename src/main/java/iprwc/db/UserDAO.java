@@ -62,4 +62,8 @@ public interface UserDAO {
 
     @SqlUpdate("UPDATE person SET password = :password WHERE id = :id")
     int setNewPassword(@Bind("password") String password, @Bind("id") int id);
+
+    @SqlUpdate("DELETE FROM person WHERE id = :id")
+    public void deleteUser(@Bind("id") int id);
+
 }

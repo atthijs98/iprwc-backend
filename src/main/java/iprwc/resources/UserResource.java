@@ -183,4 +183,19 @@ public class UserResource {
         );
     }
 
+    @Path("{id}")
+    @DELETE
+    public Response deleteUser(@Auth User user, @PathParam("id") int id) {
+        try {
+            userService.deleteUser(user, id);
+            return Body.buildResponse(
+                    Response.Status.OK,
+                    messageFactory.getMessageUtil(user.getLanguage()).get(USER_DELETED),
+                    id
+            );
+
+        } catch (NotAuthorizedException e) {
+            return e.getResponse();
+        }
+    }
 }

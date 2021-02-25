@@ -12,6 +12,7 @@ import io.dropwizard.setup.Environment;
 import iprwc.api.User;
 import iprwc.core.JwtAuthenticator;
 import iprwc.core.JwtHelper;
+import iprwc.resources.ProductResource;
 import iprwc.resources.UserResource;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 import org.jdbi.v3.core.Jdbi;
@@ -63,6 +64,7 @@ public class iprwcApplication extends Application<iprwcConfiguration> {
 
         //register resources
         environment.jersey().register(new UserResource());
+        environment.jersey().register(new ProductResource());
     }
 
     private void setupJdbiConnection(final Environment environment, DataSourceFactory dataSourceFactory) {

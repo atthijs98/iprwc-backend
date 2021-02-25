@@ -3,9 +3,7 @@
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/24.1.1-jre/guava-24.1.1-jre.jar!/" />
     </CLASSES>
-    <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/24.1.1-jre/guava-24.1.1-jre-javadoc.jar!/" />
-    </JAVADOC>
+    <JAVADOC />
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/24.1.1-jre/guava-24.1.1-jre-sources.jar!/" />
     </SOURCES>

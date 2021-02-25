@@ -17,5 +17,12 @@
   "USER_LANGUAGE_CHANGED" : "The language has been changed",
   "USER_PASSWORD_CHANGED": "Successfully changed password",
   "PASSWORD_NOT_NEW": "The given password is the same as the previous password",
-  "ALL_PROFILES_GOTTEN" : "The requested competency profiles have been gotten"
+  "ALL_PROFILES_GOTTEN" : "The requested competency profiles have been gotten",
+  "USER_DELETED": "The user was deleted successfully",
+  "ALL_PRODUCTS_RETRIEVED": "All products were retrieved successfully",
+  "ALL_PRODUCTS_RETRIEVED_FAILED": "Failed to retrieve all products",
+  "PRODUCT_RETRIEVED": "Successfully retrieved product from id",
+  "PRODUCT_DELETED": "Product was deleted successfully",
+  "PRODUCT_ADDED": "Product was added successfully",
+  "DUPLICATE_PRODUCT": "Product already exists"
 }
