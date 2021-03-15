@@ -7,8 +7,6 @@ public class Product {
     private String enTitle;
     private String orTitle;
     private String romOrTitle;
-//    private ProductDirector[] directors;
-//    private ProductImage[] images;
     private String year;
     private String runtime;
     private String plot;
@@ -17,7 +15,8 @@ public class Product {
     private Double price;
     private Timestamp createdAt;
 
-    public Product(int id, String enTitle, String orTitle, String romOrTitle, String year, String runtime, String plot, String poster, String trailer, double price, Timestamp createdAt) {
+    public Product(int id, String enTitle, String orTitle, String romOrTitle,
+                   String year, String runtime, String plot, String poster, String trailer, double price, Timestamp createdAt) {
         this.id = id;
         this.enTitle = enTitle;
         this.orTitle = orTitle;
@@ -28,8 +27,6 @@ public class Product {
         this.poster = poster;
         this.trailer = trailer;
         this.price = price;
-//        this.directors = directors;
-//        this.images = images;
         this.createdAt = createdAt;
     }
 
@@ -72,22 +69,6 @@ public class Product {
     public String getYear() {
         return year;
     }
-
-//    public ProductDirector[] getDirectors() {
-//        return directors;
-//    }
-//
-//    public ProductImage[] getImages() {
-//        return images;
-//    }
-//
-//    public void setDirectors(ProductDirector[] directors) {
-//        this.directors = directors;
-//    }
-//
-//    public void setImages(ProductImage[] images) {
-//        this.images = images;
-//    }
 
     public Timestamp getCreatedAt() {
         return createdAt;

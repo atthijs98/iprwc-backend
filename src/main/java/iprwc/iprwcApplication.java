@@ -14,6 +14,7 @@ import iprwc.core.JwtAuthenticator;
 import iprwc.core.JwtHelper;
 import iprwc.resources.ProductResource;
 import iprwc.resources.UserResource;
+import iprwc.service.RegisterMapperService;
 import org.eclipse.jetty.servlets.CrossOriginFilter;
 import org.jdbi.v3.core.Jdbi;
 import org.jose4j.jwt.consumer.JwtConsumer;
@@ -63,6 +64,7 @@ public class iprwcApplication extends Application<iprwcConfiguration> {
         JwtHelper.jwtSecret = configuration.getJwtSecret();
 
         //register resources
+        environment.jersey().register(new RegisterMapperService(jdbiConnection).registerMappersToModels());
         environment.jersey().register(new UserResource());
         environment.jersey().register(new ProductResource());
     }

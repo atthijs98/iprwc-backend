@@ -1,6 +1,8 @@
 package iprwc.db.mappers;
 
 import iprwc.api.Product;
+import iprwc.api.ProductDirector;
+import iprwc.api.ProductImage;
 import org.jdbi.v3.core.mapper.RowMapper;
 import org.jdbi.v3.core.statement.StatementContext;
 

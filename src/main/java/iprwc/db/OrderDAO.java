@@ -8,7 +8,7 @@ import org.jdbi.v3.sqlobject.statement.SqlQuery;
 
 import java.util.List;
 
-@RegisterRowMapper(ProductMapper.class)
+//@RegisterRowMapper(ProductMapper.class)
 public interface OrderDAO {
     @SqlQuery("SELECT * FROM order")
     List<Order> getOrders();

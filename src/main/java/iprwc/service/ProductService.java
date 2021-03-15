@@ -44,6 +44,7 @@ public class ProductService {
     }
 
     public Object addProduct(Product product, User authUser) throws BadRequestException {
+        System.out.println("\n" + product.getEnTitle() + "\n");
         String title = productDAO.checkForDuplicate(product.getEnTitle(), product.getYear());
 
         if (title != null) {

@@ -1,8 +1,11 @@
 package iprwc.resources;
 
 import com.google.gson.Gson;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
 import io.dropwizard.auth.Auth;
 import iprwc.api.Product;
+import iprwc.api.ProductDirector;
 import iprwc.api.User;
 import iprwc.core.Body;
 import iprwc.service.ProductService;
@@ -77,8 +80,18 @@ public class ProductResource {
     @Path("add")
     @POST
     public Response addProduct(@Auth User authUser, String productJson) {
-        System.out.println(productJson);
-        Product product = new Gson().fromJson(productJson, Product.class);
+//        System.out.println(productJson);
+
+        JsonObject jsonObj = new Gson().fromJson(productJson, JsonObject.class);
+        JsonElement productImagesJson = jsonObj.get("images");
+        JsonElement productDirectorsJson = jsonObj.get("directors");
+        jsonObj.remove("directors");
+        jsonObj.remove("images");
+        System.out.println(jsonObj);
+        Product product = new Gson().fromJson(jsonObj.toString(), Product.class);
+
+
+
         try {
             return Body.buildResponse(
                     Response.Status.OK,

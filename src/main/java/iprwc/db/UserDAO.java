@@ -14,7 +14,7 @@ import java.util.List;
  * UserDAO, is used to execute sql queries on the database.
  *
  */
-@RegisterRowMapper(UserMapper.class)
+// @RegisterRowMapper(UserMapper.class)
 public interface UserDAO {
 
     @SqlUpdate("CREATE TABLE IF NOT EXISTS person ( " +

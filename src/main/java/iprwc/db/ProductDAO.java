@@ -14,7 +14,7 @@ import java.util.List;
 
 //@RegisterRowMapper(ProductImageMapper.class)
 //@RegisterRowMapper(ProductDirectorMapper.class)
-@RegisterRowMapper(ProductMapper.class)
+//@RegisterRowMapper(ProductMapper.class)
 public interface ProductDAO {
     @SqlQuery("SELECT * FROM product")
     List<Product> getProducts();
